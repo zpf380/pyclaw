@@ -1,0 +1,143 @@
+/* 页面专属样式（由 App.css 拆分而来） */
+.home-page {
+
+  width: 100%;
+
+}
+
+.home-welcome {
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+
+}
+
+.home-welcome h2 {
+
+  margin: 0;
+  font-size: 20px;
+  color: var(--text-primary);
+
+}
+
+.home-actions {
+
+  display: flex;
+  gap: 12px;
+
+}
+
+.agent-status-card {
+
+  background: var(--surface-glass);
+  backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-card);
+
+}
+
+.agent-status-card .card-title {
+
+  margin-bottom: 16px;
+
+}
+
+.agent-status-card .card-title h2 {
+
+  font-size: 18px;
+  margin: 0;
+
+}
+
+.agent-status {
+
+  margin-bottom: 20px;
+
+}
+
+.status-dot {
+
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #999;
+
+}
+
+.status-text {
+
+  font-size: 15px;
+
+}
+
+.agent-info {
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+
+}
+
+.text-success {
+
+  color: #00c48c;
+
+}
+
+.text-danger {
+
+  color: #ff4d4f;
+
+}
+
+.quick-entry h3 {
+
+  font-size: 16px;
+  margin-bottom: 16px;
+
+}
+
+.entry-grid {
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+
+}
+
+.entry-item {
+
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  cursor: pointer;
+
+}
+
+.entry-item p {
+
+  margin: 0;
+  font-size: 13px;
+  color: #333;
+
+}
+
+@media (max-width: 768px) {
+.agent-info {
+
+    grid-template-columns: 1fr;
+  
+}
+.entry-grid {
+
+    grid-template-columns: repeat(2, 1fr);
+  
+}
+}

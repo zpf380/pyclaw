@@ -1,0 +1,282 @@
+/* 页面专属样式（由 App.css 拆分而来） */
+.skill-management-page {
+
+  width: 100%;
+  color: #333;
+
+}
+
+.skills-list {
+
+  background: var(--surface-glass);
+  backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  min-height: 500px;
+  box-shadow: var(--shadow-card);
+
+}
+
+.skills-table {
+
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+
+}
+
+.table-header {
+
+  display: flex;
+  background-color: rgba(var(--color-primary-rgb), 0.06);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-soft);
+
+}
+
+.table-row {
+
+  display: flex;
+  border-bottom: 1px solid var(--border-hairline);
+  transition: var(--transition);
+
+}
+
+.table-row:hover {
+
+  background-color: rgba(var(--color-primary-rgb), 0.04);
+
+}
+
+.table-cell {
+
+  padding: 15px;
+  display: flex;
+  align-items: center;
+
+}
+
+.name-col {
+
+  width: 15%;
+
+}
+
+.code-col {
+
+  width: 15%;
+
+}
+
+.desc-col {
+
+  width: 25%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+.status-col {
+
+  width: 10%;
+
+}
+
+.time-col {
+
+  width: 18%;
+  color: var(--text-secondary);
+  font-size: 13px;
+
+}
+
+.action-col {
+
+  width: 17%;
+  display: flex;
+  gap: 8px;
+
+}
+
+@media (max-width: 1200px) {
+.table-cell {
+
+    padding: 12px 8px;
+  
+}
+.desc-col {
+
+    display: none;
+  
+}
+.name-col {
+
+    width: 20%;
+  
+}
+.code-col {
+
+    width: 20%;
+  
+}
+.status-col {
+
+    width: 15%;
+  
+}
+.time-col {
+
+    width: 20%;
+  
+}
+.action-col {
+
+    width: 25%;
+  
+}
+}
+
+.header-actions {
+
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+}
+
+.sync-btn {
+
+  background-color: rgba(var(--color-primary-rgb), 0.08);
+  color: var(--color-primary);
+  border: 1px solid rgba(var(--color-primary-rgb), 0.3);
+
+}
+
+.sync-btn:hover {
+
+  background-color: rgba(var(--color-primary-rgb), 0.15);
+
+}
+
+/* 来源徽标（内置/工作区） */
+.source-tag {
+
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  vertical-align: middle;
+
+}
+
+.source-tag.builtin {
+
+  background-color: #fef3c7;
+  color: #b45309;
+
+}
+
+.source-tag.workspace {
+
+  background-color: #e0f2fe;
+  color: #0284c7;
+
+}
+
+/* SKILL.md 正文编辑器 */
+.skill-body-editor {
+
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.6;
+  resize: vertical;
+
+}
+
+.read-only-tip {
+
+  background-color: #fef3c7;
+  color: #b45309;
+  border-radius: 6px;
+  padding: 8px 12px;
+  text-align: left;
+
+}
+
+
+@media (max-width: 1200px) {
+.table-cell {
+
+    padding: 12px 8px;
+
+}
+.desc-col {
+
+    display: none;
+
+}
+.name-col {
+
+    width: 20%;
+
+}
+.code-col {
+
+    width: 20%;
+
+}
+.status-col {
+
+    width: 15%;
+
+}
+.time-col {
+
+    width: 20%;
+
+}
+.action-col {
+
+    width: 25%;
+
+}
+}
+
+@media (max-width: 768px) {
+.time-col {
+
+    display: none;
+
+}
+.name-col {
+
+    width: 25%;
+
+}
+.code-col {
+
+    width: 25%;
+
+}
+.status-col {
+
+    width: 20%;
+
+}
+.action-col {
+
+    width: 30%;
+    flex-wrap: wrap;
+
+}
+.header-actions {
+
+    flex-wrap: wrap;
+
+}
+}

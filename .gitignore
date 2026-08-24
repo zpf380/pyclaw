@@ -1,0 +1,41 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+dist/
+build/
+
+# === Node / Web UI ===
+node_modules/
+webui/node_modules/
+webui/build/
+npm-debug.log*
+
+# === 运行时数据库与日志 ===
+*.db
+*.sqlite3
+*.log
+webui_start.log
+gateway_restart.log
+
+# === 敏感配置（含 API Key / 渠道密钥，禁止提交） ===
+workspace/pyclaw.json
+.env
+.env.*
+!.env.example
+
+# === 运行时数据（会话记录 / 定时任务状态） ===
+workspace/sessions/
+workspace/cron/
+
+# === IDE / 系统 ===
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# === 临时文件 ===
+workspace/workspace/.pyclaw_tmp/

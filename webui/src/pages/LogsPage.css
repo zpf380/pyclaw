@@ -1,0 +1,80 @@
+/* 页面专属样式（由 App.css 拆分而来） */
+.logs-header {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.clear-btn {
+
+  background: var(--gradient-danger);
+  color: white;
+
+}
+
+.logs-container {
+
+  background: var(--surface-glass);
+  backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  min-height: 500px;
+  box-shadow: var(--shadow-card);
+
+}
+
+.empty-logs {
+
+  text-align: center;
+  color: var(--text-muted);
+  padding: 40px 20px;
+
+}
+
+.logs-list {
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.log-item {
+
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  background-color: var(--surface-solid);
+  border-left: 4px solid var(--border-soft);
+
+}
+
+.log-meta {
+
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: var(--text-secondary);
+
+}
+
+.log-type {
+
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 11px;
+  color: white;
+
+}
+
+.log-content {
+
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--text-primary);
+
+}

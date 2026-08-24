@@ -1,0 +1,104 @@
+{
+  "_example": "脱敏示例：复制为 pyclaw.json 并填入你的 API Key / 渠道密钥",
+  "agents": {
+    "defaults": {
+      "workspace": "./workspace/workspace",
+      "model": "deepseek/deepseek-chat",
+      "maxTokens": "",
+      "temperature": 0.7,
+      "maxToolIterations": 20
+    }
+  },
+  "channels": {
+    "whatsapp": {
+      "enabled": false,
+      "bridgeUrl": "ws://localhost:3001",
+      "allowFrom": []
+    },
+    "telegram": {
+      "enabled": false,
+      "token": "",
+      "allowFrom": [],
+      "proxy": null
+    },
+    "feishu": {
+      "enabled": true,
+      "appId": "",
+      "appSecret": "",
+      "encryptKey": "",
+      "verificationToken": "",
+      "allowFrom": []
+    },
+    "openim": {
+      "enabled": false,
+      "userId": "",
+      "wsAddr": "wss://web.yunzainfo.com/msg_gateway",
+      "apiAddr": "https://web.yunzainfo.com/api"
+    }
+  },
+  "providers": {
+    "anthropic": {
+      "apiKey": "",
+      "apiBase": null,
+      "enableTextToolCallFallback": true
+    },
+    "openai": {
+      "apiKey": "",
+      "apiBase": null,
+      "enableTextToolCallFallback": true
+    },
+    "openrouter": {
+      "apiKey": "",
+      "apiBase": null,
+      "enableTextToolCallFallback": true
+    },
+    "deepseek": {
+      "apiKey": "",
+      "apiBase": "https://api.deepseek.com/v1",
+      "enableTextToolCallFallback": true
+    },
+    "groq": {
+      "apiKey": "",
+      "apiBase": null,
+      "enableTextToolCallFallback": true
+    },
+    "zhipu": {
+      "apiKey": "",
+      "apiBase": null,
+      "enableTextToolCallFallback": true
+    },
+    "vllm": {
+      "apiKey": "",
+      "apiBase": null,
+      "enableTextToolCallFallback": true
+    },
+    "gemini": {
+      "apiKey": "",
+      "apiBase": null,
+      "enableTextToolCallFallback": true
+    }
+  },
+  "gateway": {
+    "host": "0.0.0.0",
+    "port": 18790
+  },
+  "auth": {
+    "enabled": true,
+    "adminUsername": "admin",
+    "adminPassword": "admin123",
+    "tokenTtlHours": "",
+    "seedAdmin": true
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "apiKey": "",
+        "maxResults": 5
+      }
+    },
+    "exec": {
+      "timeout": 60,
+      "restrictToWorkspace": true
+    }
+  }
+}

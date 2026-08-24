@@ -1,0 +1,40 @@
+/* 能力中心 - Tab 容器样式 */
+.capability-center-page {
+  width: 100%;
+  color: #333;
+}
+
+.cc-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-soft);
+  padding-bottom: 12px;
+}
+
+.cc-tab {
+  padding: 8px 20px;
+  border: 1px solid var(--border-soft);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--text-secondary);
+  font-size: 14px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.cc-tab:hover {
+  background-color: rgba(var(--color-primary-rgb), 0.1);
+  border-color: rgba(var(--color-primary-rgb), 0.4);
+}
+
+.cc-tab.active {
+  background: var(--gradient-primary);
+  border-color: transparent;
+  color: #fff;
+  font-weight: 500;
+}
+
+.cc-content {
+  width: 100%;
+}
