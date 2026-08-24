@@ -218,6 +218,10 @@ __marimo__/
 .streamlit/secrets.toml
 
 # === pyclaw 项目专属 ===
+# IDE（JetBrains / VSCode）
+.idea/
+.vscode/
+*.swp
 # Node / Web UI（构建产物与依赖）
 node_modules/
 webui/node_modules/
